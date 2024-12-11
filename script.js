@@ -1,17 +1,10 @@
-// Welcoming message function
 window.onload = function() {
-    var welcomeMessage = document.getElementById("welcomeMessage");
-    if (welcomeMessage) {
-        welcomeMessage.innerHTML = "<h3>Welcome to my personal website! I'm glad you're here!</h3>";
-    }
-}
+    alert('Welcome to my website!');
+};
 
-// Custom JS function that asks for user's name
-function askName() {
-    var name = prompt("What is your name?");
-    if (name != null && name != "") {
-        document.getElementById("userName").innerHTML = "Hello, " + name + "!";
-    } else {
-        document.getElementById("userName").innerHTML = "Hello, stranger!";
+function greetUser() {
+    var name = prompt("Enter your name:");
+    if (name) {
+        document.getElementById('greeting').innerText = 'Hello, ' + name + '!';
     }
 }
